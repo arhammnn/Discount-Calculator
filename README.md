@@ -17,10 +17,10 @@ Sebuah aplikasi web sederhana untuk menghitung total harga setelah dipotong disk
 
 # Cara Menjalankan Aplikasi di Komputer Lokal
 
-Pastikan Python sudah terinstal di komputer Anda sebelum menjalankan aplikasi ini.
+Pastikan Python sudah terinstal di komputer sebelum menjalankan aplikasi ini.
 
 1. Buka Terminal atau Command Prompt.
-2. *Clone repository* ini ke dalam komputer Anda:
+2. *Clone repository* ini ke dalam komputer :
    ```bash
    git clone [https://github.com/arhammnn/Discount-Calculator.git](https://github.com/arhammnn/Discount-Calculator.git)
 
