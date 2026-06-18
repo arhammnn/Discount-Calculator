@@ -7,7 +7,7 @@ Sebuah aplikasi web sederhana untuk menghitung total harga setelah dipotong disk
 * Mengkalkulasi otomatis nominal potongan harga berdasarkan persentase diskon.
 * Menampilkan total harga bersih (Total Bayar) yang harus dibayarkan.
 * Antarmuka pengguna (UI) yang responsif dan mudah dipahami.
-  <br>
+  <br><br><br>
   <img width="606" height="617" alt="image" src="https://github.com/user-attachments/assets/a305ccdb-864e-4d56-b9f0-02ec02d81a66" />
 
 
