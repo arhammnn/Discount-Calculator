@@ -20,16 +20,19 @@ Sebuah aplikasi web sederhana untuk menghitung total harga setelah dipotong disk
 Pastikan Python sudah terinstal di komputer Anda sebelum menjalankan aplikasi ini.
 
 1. Buka Terminal atau Command Prompt.
-2. *Clone repository* ini ke dalam komputer Anda:
+2. *Clone repository* ini ke dalam komputer :
    ```bash
    git clone [https://github.com/arhammnn/Discount-Calculator.git](https://github.com/arhammnn/Discount-Calculator.git)
 
-   Masuk ke dalam folder proyek:
+3. Masuk ke dalam folder proyek:
+   ```bash
    cd Discount-Calculator
 
-   Instal library Flask (jika sebelumnya belum terinstal):
+4. Instal library Flask (jika sebelumnya belum terinstal):
+   ```bash
    pip install flask
-
+5. Jalankan programnya melalui terminal :
+   ```bash
    python calculator.py
 
    Buka browser dan kunjungi alamat URL lokal yang muncul di terminal http://127.0.0.1:5000/
