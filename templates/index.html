@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Discount Calculator</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <div class="container">
+        <h2>Discount Calculator</h2>
+        <form method="POST">
+            <label>Harga Satuan (Rp):</label>
+            <input type="number" name="price" min="0" step="any" required placeholder="150000" value="{{ request.form.price|default('') }}">
+            
+            <label>Kuantitas (Jumlah Barang):</label>
+            <input type="number" name="quantity" min="1" required placeholder="Contoh: 2" value="{{ request.form.quantity|default('1') }}">
+            
+            <label>Diskon (%):</label>
+            <input type="number" name="discount" min="0" max="100" step="any" required placeholder="Contoh: 15" value="{{ request.form.discount|default('0') }}">
+            
+            <input type="submit" value="Hitung Total">
+        </form>
+
+        {% if final_price is not none %}
+        <div class="result">
+            <p><strong>Total Harga Awal:</strong> Rp {{ "{:,.0f}".format(total_awal).replace(',', '.') }}</p>
+            <p><strong>Potongan Diskon:</strong> Rp {{ "{:,.0f}".format(potongan).replace(',', '.') }}</p>
+            <hr style="border-top: 1px solid #b8daff;">
+            <p class="final-price">Total Bayar: Rp {{ "{:,.0f}".format(final_price).replace(',', '.') }}</p>
+        </div>
+        {% endif %}
+    </div>
+</body>
+</html>
